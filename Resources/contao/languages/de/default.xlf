@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+  <file datatype="php" original="system/modules/member-send-password/languages/en/default.xlf" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="MSC.passwordSelected">
+        <source>Send password</source>
+        <target>Passwörter senden</target>
+      </trans-unit>
+      <trans-unit id="MSC.passwordConfirm">
+        <source>Attention by selected member where generate new password and send it!</source>
+        <target>Achtung es werden bei den gewählten Mitglieder die Passwörter neu generiert und versendet!</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
