@@ -79,7 +79,7 @@ class SendPasswordController
                         $memberModel->firstname,
                         $memberModel->lastname,
                         $memberModel->username ? $memberModel->username : $memberModel->email,
-                        $memberModel->password,
+                        $password,
                         Config::get('websiteTitle')
                     )
                 );
