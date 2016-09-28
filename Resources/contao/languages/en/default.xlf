@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+  <file datatype="php" original="system/modules/member-send-password/languages/en/default.xlf" source-language="en">
+    <body>
+      <trans-unit id="MSC.passwordSelected">
+        <source>Send password</source>
+      </trans-unit>
+      <trans-unit id="MSC.passwordConfirm">
+        <source>Attention by selected member where generate new password and send it!</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

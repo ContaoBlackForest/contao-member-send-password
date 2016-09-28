@@ -42,7 +42,7 @@
   "prefer-stable": true,
   "autoload": {
     "psr-4": {
-      "ContaoBlackForest\\Member\\Import\\": ""
+      "ContaoBlackForest\\Member\\SendPassword\\": ""
     }
   },
   "extra": {
