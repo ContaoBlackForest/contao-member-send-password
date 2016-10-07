@@ -18,6 +18,7 @@ use Contao\Controller;
 use Contao\Email;
 use Contao\Environment;
 use Contao\MemberModel;
+use Contao\PageModel;
 use Contao\Template;
 
 /**
@@ -47,6 +48,8 @@ class SendPasswordController
 
         $memberModel = MemberModel::findMultipleByIds($processIds);
 
+        $loginPage = PageModel::findByPk(87);
+
         if ($memberModel) {
             $template = new BackendTemplate('be_member_send_password');
 
@@ -69,15 +72,17 @@ class SendPasswordController
                 $email->text    = vsprintf(
                     'Hallo %s %s,
                     
-                    Es wurde ein neues Passwort erstellt.
+                    für den Zugang in das Intranet des Musikforum Durlach(%s) benötigst Du diese Zugangsdaten:
                     
                     Login: %s
                     Passwort: %s
                     
-                    Mit freundlichen Grüssen %s',
+                    Mit freundlichen Grüßen
+                    %s',
                     array(
                         $memberModel->firstname,
                         $memberModel->lastname,
+                        $loginPage->getAbsoluteUrl(),
                         $memberModel->username ? $memberModel->username : $memberModel->email,
                         $password,
                         Config::get('websiteTitle')
