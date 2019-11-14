@@ -45,6 +45,7 @@ final class Plugin implements BundlePluginInterface
                         'notification_center'
                     ]
                 )
+                ->setReplace(['member-send-password'])
         ];
     }
 }
