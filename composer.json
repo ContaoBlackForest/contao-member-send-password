@@ -43,6 +43,7 @@
         }
     },
     "extra": {
+        "contao-manager-plugin": "ContaoBlackForest\\MemberSendPasswordBundle\\ContaoManager\\Plugin",
         "branch-alias": {
             "dev-release/2.0.0": "2.0.x-dev"
         }
