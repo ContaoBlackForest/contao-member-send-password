@@ -29,6 +29,7 @@
     "require": {
         "php": "^7.1",
         "contao/core-bundle": "^4.4",
+        "terminal42/notification_center": "^1.5",
         "symfony/dependency-injection": "^3.4 || ^4.3",
         "symfony/http-foundation": "^3.4 || ^4.3",
         "ext-pdo": "*"
