@@ -41,7 +41,8 @@ final class Plugin implements BundlePluginInterface
             BundleConfig::create(BlackForestMemberSendPasswordBundle::class)
                 ->setLoadAfter(
                     [
-                        ContaoCoreBundle::class
+                        ContaoCoreBundle::class,
+                        'notification_center'
                     ]
                 )
         ];
