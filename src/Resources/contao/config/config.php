@@ -33,7 +33,7 @@ $GLOBALS['TL_HOOKS']['parseTemplate'][] =
  * Notification type.
  */
 
-$tokenConfig = ['member_*', 'member_label_*' , 'data', 'admin_email'];
+$tokenConfig = ['member_*', 'member_label_*' , 'new_password', 'data'];
 
 $GLOBALS['NOTIFICATION_CENTER']['NOTIFICATION_TYPE']['contao'] = array_merge(
     (array) $GLOBALS['NOTIFICATION_CENTER']['NOTIFICATION_TYPE']['contao'],
