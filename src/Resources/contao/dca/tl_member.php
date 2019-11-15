@@ -1,5 +1,7 @@
 <?php
 
+use ContaoBlackForest\MemberSendPasswordBundle\Callback\DataContainer\Table\Member\SendPasswordButton;
+
 /**
  * This file is part of contao-member-send-password.
  *
@@ -22,5 +24,4 @@
 /**
  * Add select button.
  */
-$GLOBALS['TL_DCA'][$this->strTable]['select']['buttons_callback'][] =
-    array('ContaoBlackForest\Member\SendPassword\DataContainer\Table\Member', 'injectPasswordButton');
+$GLOBALS['TL_DCA'][$this->strTable]['select']['buttons_callback'][] = [SendPasswordButton::class, '__invoke'];

@@ -29,9 +29,13 @@
     "require": {
         "php": "^7.1",
         "contao/core-bundle": "^4.4",
+        "contao-community-alliance/translator": "^2.1",
+        "doctrine/dbal": "^2.9",
         "terminal42/notification_center": "^1.5",
         "symfony/dependency-injection": "^3.4 || ^4.3",
         "symfony/http-foundation": "^3.4 || ^4.3",
+        "symfony/twig-bridge": "^3.4 || ^4.3",
+        "twig/twig": "^1.42",
         "ext-pdo": "*"
     },
     "require-dev": {

@@ -1,0 +1,6 @@
+services:
+    ContaoBlackForest\MemberSendPasswordBundle\Callback\DataContainer\Table\Member\SendPasswordButton:
+        public: true
+        arguments:
+            - '@=service("contao.framework").getAdapter("Contao\\\Config")'
+            - '@twig'
