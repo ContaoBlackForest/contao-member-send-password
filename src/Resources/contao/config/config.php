@@ -16,24 +16,12 @@
  * @license    https://github.com/contaoblackforest/contao-member-send-password/blob/master/LICENSE LGPL-3.0-or-later
  * @filesource
  */
-/**
- * Initialize session send member password.
- */
-$GLOBALS['TL_HOOKS']['initializeSystem'][] =
-    array('ContaoBlackForest\Member\SendPassword\Controller\SessionController', 'initialize');
-
-/**
- * Parse template for send member password.
- */
-$GLOBALS['TL_HOOKS']['parseTemplate'][] =
-    array('ContaoBlackForest\Member\SendPassword\Controller\SendPasswordController', 'parseTemplate');
-
 
 /*
  * Notification type.
  */
 
-$tokenConfig = ['member_*', 'member_label_*' , 'new_password', 'data'];
+$tokenConfig = ['domain', 'link', 'member_*' , 'member_label_*', 'page_*' , 'page_label_*', 'raw_data'];
 
 $GLOBALS['NOTIFICATION_CENTER']['NOTIFICATION_TYPE']['contao'] = array_merge(
     (array) $GLOBALS['NOTIFICATION_CENTER']['NOTIFICATION_TYPE']['contao'],

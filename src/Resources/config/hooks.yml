@@ -1,0 +1,16 @@
+services:
+    ContaoBlackForest\MemberSendPasswordBundle\Hook\DataContainer\Table\Member\RedirectSelectNotification:
+        public: false
+        arguments:
+            $request: '@request_stack'
+            $session: '@session'
+            $router: '@router'
+            $tokenManager: '@security.csrf.token_manager'
+            $tokenName: '%contao.csrf_token_name%'
+            # It set in the extension and can define with the configuration.
+            $sessionKey: ''
+        tags:
+            -   name: contao.hook
+                hook: parseTemplate
+                method: __invoke
+                priority: 256

@@ -52,8 +52,8 @@ final class SendPasswordButton
      */
     public function __construct(Adapter $config, Environment $twig)
     {
-        $this->twig   = $twig;
         $this->config = $config;
+        $this->twig   = $twig;
     }
 
     /**

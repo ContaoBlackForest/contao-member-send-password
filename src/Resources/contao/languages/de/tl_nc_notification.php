@@ -19,5 +19,5 @@
 
 $GLOBALS['TL_LANG']['tl_nc_notification']['type']['cb_member_send_password'] = [
     'Mitglied neues Password',
-    'Dieser Nachrichtenart wird verschickt, wenn dem Mitglied ein neues Password gesendet werden soll.'
+    'Dieser Benachrichtigung wird verschickt, wenn dem Mitglied ein neues Password gesendet werden soll.'
 ];

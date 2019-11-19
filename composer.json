@@ -30,8 +30,10 @@
         "php": "^7.1",
         "contao/core-bundle": "^4.4",
         "contao-community-alliance/translator": "^2.1",
+        "contao-community-alliance/contao-polyfill-bundle": "^1.0",
         "doctrine/dbal": "^2.9",
         "terminal42/notification_center": "^1.5",
+        "symfony/asset": "^3.4 || ^4.3",
         "symfony/dependency-injection": "^3.4 || ^4.3",
         "symfony/http-foundation": "^3.4 || ^4.3",
         "symfony/twig-bridge": "^3.4 || ^4.3",
@@ -43,7 +45,6 @@
     },
     "autoload": {
         "psr-4": {
-            "ContaoBlackForest\\Member\\SendPassword\\": "legacy",
             "ContaoBlackForest\\MemberSendPasswordBundle\\": "src"
         }
     },

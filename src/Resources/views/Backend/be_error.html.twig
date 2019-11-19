@@ -1,0 +1,7 @@
+<div id="tl_buttons">
+    <a href="{{ path('contao_backend', {'do': 'member', 'rt': requestToken, 'ref': app.request.attributes.get('_contao_referer_id')}) }}" class="header_back" title="">{{ 'MSC.backBT'|trans({}, 'contao_default') }}</a>
+</div>
+
+{% for message in messages %}
+<p class="tl_error">{{ message|trans([], 'contao_default') }}</p>
+{% endfor %}

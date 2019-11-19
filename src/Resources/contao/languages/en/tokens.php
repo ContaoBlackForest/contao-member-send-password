@@ -17,11 +17,17 @@
  * @filesource
  */
 
-$GLOBALS['TL_LANG']['NOTIFICATION_CENTER_TOKEN']['cb_member_send_password']['member_*']         =
-    'All the member data.';
-$GLOBALS['TL_LANG']['NOTIFICATION_CENTER_TOKEN']['cb_member_send_password']['member_label_*']   =
-    'All the member labels.';
-$GLOBALS['TL_LANG']['NOTIFICATION_CENTER_TOKEN']['cb_member_send_password']['new_password']     =
-    'The new password.';
-$GLOBALS['TL_LANG']['NOTIFICATION_CENTER_TOKEN']['cb_member_send_password']['data']             =
+$GLOBALS['TL_LANG']['NOTIFICATION_CENTER_TOKEN']['cb_member_send_password']['domain']         =
+    'The domain of the password page.';
+$GLOBALS['TL_LANG']['NOTIFICATION_CENTER_TOKEN']['cb_member_send_password']['link']           =
+    'The link to the password page contains the token to create a new password.';
+$GLOBALS['TL_LANG']['NOTIFICATION_CENTER_TOKEN']['cb_member_send_password']['member_*']       =
+    'The data of the member.';
+$GLOBALS['TL_LANG']['NOTIFICATION_CENTER_TOKEN']['cb_member_send_password']['member_label_*'] =
+    'The field names of the member.';
+$GLOBALS['TL_LANG']['NOTIFICATION_CENTER_TOKEN']['cb_member_send_password']['page_*']         =
+    'The data of the password page.';
+$GLOBALS['TL_LANG']['NOTIFICATION_CENTER_TOKEN']['cb_member_send_password']['page_label_*']   =
+    'The field names of the password page.';
+$GLOBALS['TL_LANG']['NOTIFICATION_CENTER_TOKEN']['cb_member_send_password']['raw_data']       =
     'All available data.';

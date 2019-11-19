@@ -10,6 +10,18 @@
         <source>Attention by selected member where generate new password and send it!</source>
         <target>Achtung es werden bei den gewählten Mitglieder die Passwörter neu generiert und versendet!</target>
       </trans-unit>
+      <trans-unit id="MSC.errorNoSelectMemberIds">
+        <source>No members have been selected!</source>
+        <target>Es wurden keine Mitglieder ausgewählt!</target>
+      </trans-unit>
+      <trans-unit id="MSC.errorNoNotification">
+        <source>No message selected!</source>
+        <target>Es wurden keine Nachricht ausgewählt!</target>
+      </trans-unit>
+      <trans-unit id="MSC.errorNoPageSelected">
+        <source>No password page was selected!</source>
+        <target>Es wurden keine Passwort Seite ausgewählt!</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

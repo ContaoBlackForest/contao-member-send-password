@@ -4,3 +4,50 @@ services:
         arguments:
             - '@=service("contao.framework").getAdapter("Contao\\\Config")'
             - '@twig'
+
+    ContaoBlackForest\MemberSendPasswordBundle\View\Backend\AbstractSendPassword:
+        public: false
+        abstract: true
+        arguments:
+            $framework: '@contao.framework'
+            $translator: '@translator'
+            $twig: '@twig'
+            $session: '@session'
+            # It set in the extension and can define with the configuration.
+            $sessionKey: ''
+            $kernelPackages: '%kernel.packages%'
+
+    ContaoBlackForest\MemberSendPasswordBundle\View\Backend\SendPasswordSelectNotification:
+        public: true
+        parent: ContaoBlackForest\MemberSendPasswordBundle\View\Backend\AbstractSendPassword
+        arguments:
+            $connection: '@database_connection'
+            $request: '@request_stack'
+            $tokenManager: '@security.csrf.token_manager'
+            $tokenName: '%contao.csrf_token_name%'
+
+    ContaoBlackForest\MemberSendPasswordBundle\View\Backend\SendPasswordSend:
+        public: true
+        parent: ContaoBlackForest\MemberSendPasswordBundle\View\Backend\AbstractSendPassword
+        arguments:
+            $connection: '@database_connection'
+            $request: '@request_stack'
+            $tokenManager: '@security.csrf.token_manager'
+            $tokenName: '%contao.csrf_token_name%'
+
+    ContaoBlackForest\MemberSendPasswordBundle\View\Backend\SendPasswordSendNotification:
+        public: true
+        arguments:
+            $framework: '@contao.framework'
+            $connection: '@database_connection'
+            $twig: '@twig'
+            $session: '@session'
+            $tokenManager: '@security.csrf.token_manager'
+            $logger: '@monolog.logger.contao'
+            $tokenName: '%contao.csrf_token_name%'
+            # It set in the extension and can define with the configuration.
+            $sessionKey: ''
+            # It set in the extension and can define with the configuration.
+            $sendCount: ''
+            # It set in the extension and can define with the configuration.
+            $sendDelay: ''

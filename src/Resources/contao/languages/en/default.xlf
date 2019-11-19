@@ -8,6 +8,15 @@
       <trans-unit id="MSC.passwordConfirm">
         <source>Attention by selected member where generate new password and send it!</source>
       </trans-unit>
+      <trans-unit id="MSC.errorNoSelectMemberIds">
+        <source>No members have been selected!</source>
+      </trans-unit>
+      <trans-unit id="MSC.errorNoNotification">
+        <source>No message selected!</source>
+      </trans-unit>
+      <trans-unit id="MSC.errorNoPageSelected">
+        <source>No password page was selected!</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>
